@@ -6,4 +6,6 @@ return [
     // that you might want to change this to a string or even uuid
     'identifier_type' => 'unsignedBigInteger',
 
+    'user_model' => 'App\\User',
+
 ];
