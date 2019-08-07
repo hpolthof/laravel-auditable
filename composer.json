@@ -1,0 +1,40 @@
+{
+  "name": "hpolthof/laravel-auditable",
+  "description": "Allow for easy addition of created_by and updated_by fields.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Paul Olthof",
+      "email": "hi@olthof.tech"
+    }
+  ],
+
+
+  "require": {
+    "laravel/framework": "^5.8"
+  },
+
+  "require-dev": {
+    "orchestra/testbench": "^3.8"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Hpolthof\\Auditable\\": "src/"
+    }
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+      "Hpolthof\\Auditable\\Tests\\": "tests/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hpolthof\\Auditable\\Providers\\ServiceProvider"
+      ]
+    }
+  }
+}
